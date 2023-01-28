@@ -102,7 +102,7 @@ class LoginPage extends StatelessWidget {
                           primary: Color.fromARGB(255, 255, 255, 255),
                           minimumSize: Size(45, 50),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(30),
                           )),
                       onPressed: (() {}),
                     ),
@@ -119,7 +119,7 @@ class LoginPage extends StatelessWidget {
                           primary: Color.fromARGB(255, 255, 255, 255),
                           minimumSize: Size(45, 50),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(30),
                           )),
                       onPressed: (() {}),
                     ),
