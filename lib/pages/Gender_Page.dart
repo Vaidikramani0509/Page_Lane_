@@ -1,100 +1,78 @@
-import 'dart:ui';
-
+import 'package:demo_01/pages/Goal_Page.dart';
 import 'package:flutter/material.dart';
+import 'package:demo_01/pages/Gender_Page.dart';
+import 'package:demo_01/pages/Login_page.dart';
+import 'package:demo_01/pages/Age_Page.dart';
+import 'package:getwidget/getwidget.dart';
 
-class Demo1 extends StatelessWidget {
+class GenderPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Color.fromARGB(255, 244, 239, 239),
+      color: Color.fromARGB(255, 255, 255, 255),
       child: Column(
         children: [
           SizedBox(
             height: 35,
           ),
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Icon(
                 Icons.arrow_back_ios_new_sharp,
-                size: 13,
+                size: 14,
               ),
               Expanded(
-                child: Text(
-                  "App Store",
-                  style: TextStyle(fontSize: 13),
-                ),
-              )
+                child: Text("App Store"),
+              ),
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 105,
           ),
-          Text("What is Your Age?", style: TextStyle(fontSize: 25)),
-          SizedBox(
-            height: 350,
-          ),
+          Text("Select Your Gender", style: TextStyle(fontSize: 25)),
+          SizedBox(height: 280),
           Row(
             children: [
               SizedBox(
-                width: 30,
+                width: 45,
               ),
               ElevatedButton(
-                child: Text("12-29"),
+                child: Text("Male"),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     foregroundColor: Colors.black,
                     padding:
-                        EdgeInsets.symmetric(horizontal: 50, vertical: 25)),
+                        EdgeInsets.symmetric(horizontal: 15, vertical: 50)),
               ),
               SizedBox(
                 width: 20,
               ),
               ElevatedButton(
-                child: Text("30-39"),
+                child: Text("Female"),
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     foregroundColor: Colors.black,
                     padding:
-                        EdgeInsets.symmetric(horizontal: 50, vertical: 25)),
+                        EdgeInsets.symmetric(horizontal: 15, vertical: 50)),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              ElevatedButton(
+                child: Text("Other"),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    foregroundColor: Colors.black,
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 15, vertical: 50)),
               ),
             ],
           ),
           SizedBox(
             height: 20,
-          ),
-          Row(
-            children: [
-              SizedBox(
-                width: 30,
-              ),
-              ElevatedButton(
-                child: Text("40-49"),
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 50, vertical: 25)),
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              ElevatedButton(
-                child: Text("49+"),
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    foregroundColor: Colors.black,
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 50, vertical: 25)),
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 30,
           ),
           ElevatedButton(
             child: Text(
@@ -109,7 +87,7 @@ class Demo1 extends StatelessWidget {
               ),
             ),
             onPressed: () {
-              Navigator.pushReplacementNamed(context, '/Homepage');
+              Navigator.pushReplacementNamed(context, '/ChoiceChipPage');
             },
           ),
         ],

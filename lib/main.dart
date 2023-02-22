@@ -1,8 +1,9 @@
-import 'package:demo_01/pages/Demo1.dart';
-import 'package:demo_01/pages/login_page.dart';
+import 'package:demo_01/pages/Choice_chip.dart';
+import 'package:demo_01/pages/Goal_Page.dart';
 import 'package:flutter/material.dart';
-
-import 'pages/home_page.dart';
+import 'package:demo_01/pages/Login_page.dart';
+import 'package:demo_01/pages/Age_Page.dart';
+import 'package:demo_01/pages/Gender_Page.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: {
-          "/": (context) => Demo1(),
-          "/Homepage": (BuildContext context) => HomePage(),
-          "/Loginpage": (BuildContext context) => LoginPage(),
+          "/": (context) => LoginPage(),
+          "/AgePage": (BuildContext context) => AgePage(),
+          "/GenderPage": (BuildContext context) => GenderPage(),
+          "/ChoiceChipPage": (BuildContext context) => ChoiceChipPage(),
         });
-  }
+  } 
 }
