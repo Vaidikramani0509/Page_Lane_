@@ -51,7 +51,8 @@ class _ChoiceChipPageState extends State<ChoiceChipPage> {
               // runSpacing: 10,
               children: _options.map((e) {
                 return ChoiceChip(
-                  label: Text(e),
+                  label: Text(e,
+                              style: TextStyle(color: Color.fromARGB(255, 255, 255, 255),),),
                   selected: _selected.contains(e),
                   selectedColor: Color.fromARGB(255, 67, 108, 255),
                   onSelected: (selected) {
